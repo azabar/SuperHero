@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_host_fragment">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:label="fragment_home" >
+        <action
+            android:id="@+id/nav_host_fragment_to_nav_character_fragment"
+            app:destination="@id/nav_character_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_character_fragment"
+        android:name="app.org.superhero.ui.view.CharacterFragment"
+        android:label="fragment_character" >
+        <action
+            android:id="@+id/nav_character_fragment_to_nav_host_fragment"
+            app:destination="@id/nav_host_fragment">
+            <argument
+                android:name="resourceURI"
+                app:argType="string"
+                android:defaultValue="" />
+        </action>
+    </fragment>
+</navigation>

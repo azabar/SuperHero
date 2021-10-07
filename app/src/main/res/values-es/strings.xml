@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SuperHero</string>
+    <string name="hide">OCULTAR</string>
+    <string name="name">NOMBRE</string>
+    <string name="description">DESCRIPCIÓN</string>
+    <string name="comics">COMICS</string>
+    <string name="stories">CUENTOS</string>
+    <string name="events">EVENTOS</string>
+    <string name="series">SERIES</string>
+    <string name="unknown">Desconocido</string>
+    <string name="data_error">Ha ocurrido un error</string>
+</resources>
